@@ -8,14 +8,14 @@ load_dotenv()
 
 st.sidebar.header("🔑 API Setup")
 API_KEY = st.sidebar.text_input("Enter your OpenRouter API Key", type="password")
-REFERER_URL = "https://sahanakhanai-threatlens.streamlit.app/"  # Update this if your app URL changes
+REFERER_URL = "https://sahanakhanai-threatlens.streamlit.app/"  # No emojis or Unicode
 
 def call_openrouter(prompt):
     headers = {
-    "Authorization": f"Bearer {API_KEY}",  # Replace API_KEY with your actual key
-    "HTTP-Referer": "https://sahanakhanai-threatlens.streamlit.app/",  # Your deployed Streamlit app URL
-    "Content-Type": "application/json"
-   }
+        "Authorization": f"Bearer {API_KEY}",
+        "Referer": REFERER_URL,
+        "Content-Type": "application/json"
+    }
 
     data = {
         "model": "mistralai/mistral-7b-instruct",
