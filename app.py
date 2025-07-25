@@ -7,15 +7,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.sidebar.header("🔑 API Setup")
-API_KEY = st.sidebar.text_input("Enter your OpenRouter API Key", type="password")
+API_KEY = st.sidebar.text_input("Enter your OpenRouter API Key", type="password").strip()
 REFERER_URL = "https://sahanakhanai-threatlens.streamlit.app/"  # No emojis or Unicode
 
 def call_openrouter(prompt):
-    headers = {
-        "Authorization": f"Bearer {API_KEY}",
-        "Referer": REFERER_URL,
-        "Content-Type": "application/json"
-    }
+   headers = {
+    "Authorization": f"Bearer {API_KEY}".encode("ascii", "ignore").decode(),
+    "Referer": REFERER_URL.encode("ascii", "ignore").decode(),
+    "Content-Type": "application/json"
+}
 
     data = {
         "model": "mistralai/mistral-7b-instruct",
