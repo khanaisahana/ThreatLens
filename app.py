@@ -13,7 +13,7 @@ API_KEY = "sk-or-v1-7f4b3b2f148a1de678071197385a523f8c509e9138b1caa5041b653ddf51
 def call_openrouter(prompt):
     headers = {
     "Authorization": f"Bearer {API_KEY}",  # Replace API_KEY with your actual key
-    "HTTP-Referer": "https://sahanagenai.streamlit.app",  # Your deployed Streamlit app URL
+    "HTTP-Referer": "https://sahanakhanai-threatlens.streamlit.app/",  # Your deployed Streamlit app URL
     "Content-Type": "application/json"
    }
 
