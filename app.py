@@ -6,9 +6,9 @@ import requests
 from dotenv import load_dotenv
 load_dotenv()
 
-# ==== OpenRouter API Setup ====
-# API_KEY = os.getenv("API_KEY")
-API_KEY = "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"
+st.sidebar.header("🔑 API Setup")
+API_KEY = st.sidebar.text_input("Enter your OpenRouter API Key", type="password")
+REFERER_URL = "https://sahanagenai.streamlit.app"  # Update this if your app URL changes
 
 def call_openrouter(prompt):
     headers = {
