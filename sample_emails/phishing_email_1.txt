@@ -1,0 +1,10 @@
+Dear Customer,
+
+Your account has been locked due to suspicious login attempts.  
+Please click the link below to verify your identity immediately:  
+http://secure-update-login.com  
+
+If you fail to verify within 24 hours, your account will be suspended permanently.  
+
+Thank you,  
+IT Support Team
