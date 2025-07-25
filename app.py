@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ==== OpenRouter API Setup ====
-API_KEY = os.getenv("API_KEY")
+# API_KEY = os.getenv("API_KEY")
+API_KEY = "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"
 
 def call_openrouter(prompt):
     headers = {
