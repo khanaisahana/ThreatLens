@@ -1,6 +1,7 @@
-# ThreatLens
-A GenAI-Powered Cyber Threat Assistant
+# ThreatLens - A GenAI-Powered Cyber Threat Assistant
 
+Live Demo:
+https://sahanakhanai-threatlens.streamlit.app/
 
 📌 Description :
 An interactive multi-tab assistant that leverages Large Language Models to analyze phishing content, explain CVEs, and summarize security logs. Built with Streamlit and OpenRouter API, it helps security teams accelerate threat triage with contextual AI support.
